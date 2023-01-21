@@ -5,12 +5,15 @@ author: "Petr Pajdla"
 institute: "Institute of Archaeology, Czech Acad. Sci., Brno"
 format: 
   revealjs:
+    width: 1280
     slide-number: true
-    logo: img/aiscr_logo3.png
+    logo: img/aiscr_logo.png
     footer: '[AIS CR](https://aiscr.cz/): Towards Open Data and Research'
     css: style.css
     smaller: true
     theme: simple
+editor:
+  render-on-save: true
 ---
 
 <!-- ## Abstract
@@ -35,83 +38,95 @@ Although the whole process of digitization and the opening of Czech archaeology 
 
 :::
 ::: {.column width="40%"}
-![Institutes](img/map_loga.png)
+#### Institutes of Archaeology
+![](img/map_loga.png)
 :::
 ::::
 
-## Core tools & services {.scrollable}
+## Core tools & services
 
 :::: {.columns}
-::: {.column width="50%"}
-<!-- image: amčr -->
+::: {.column width="60%"}
+![](img/amcr.png)
 :::
-::: {.column width="50%"}
-#### Database
+::: {.column width="40%"}
+#### Database interface
 *Archaeological Map of the Czech Rep.* (AMČR)  
-[https://archeologickamapa.cz/](https://archeologickamapa.cz/)  
-– Legacy *java* desktop client.  
-– New web-based app in development.
+<https://archeologickamapa.cz/>
+
+- Legacy *java* desktop client
+- New web-based app in development
 :::
 ::::
 
 :::: {.columns}
-::: {.column width="50%"}
-<!-- img: da -->
+::: {.column width="60%"}
+![](img/digiarchiv.png)
 :::
-::: {.column width="50%"}
-#### Catalogue
+::: {.column width="40%"}
+#### Online catalogue
 *Digital Archive of the AMČR*  
-[https://digiarchiv.aiscr.cz/](https://digiarchiv.aiscr.cz/)
+<https://digiarchiv.aiscr.cz/> 
 
+- CC BY-NC 4.0 licence
+- 4 levels of accessibility
 :::
 ::::
 
-## Core tools & services {.scrollable}
+## Core tools & services
 
 :::: {.columns}
-::: {.column width="50%"}
-<!-- img api? -->
+::: {.column width="60%"}
+![](img/api_xml.png)
 :::
-::: {.column width="50%"}
+::: {.column width="40%"}
 #### OAI-PMH API
 *AMČR Data Provider*  
-[https://api.aiscr.cz/](https://api.aiscr.cz/)
+<https://api.aiscr.cz/>
 :::
 :::: 
 
 :::: {.columns}
-::: {.column width="50%"}
-<!-- img api? -->
+::: {.column width="60%"}
+![](img/atlas.png)
 :::
-::: {.column width="50%"}
-#### Public 
+::: {.column width="40%"}
+#### For the public 
 *Archaeological Atlas of the Czech Rep.*  
-[https://www.archeologickyatlas.cz/](https://www.archeologickyatlas.cz/)
+<https://www.archeologickyatlas.cz/>
 :::
 :::: 
 
 ## Data model
 
+![Data model](img/amcr_data_model.png)
+
 ## Repository
 <!-- info that we are getting a repository? -->
 
-## Quarto
+## User roles
 
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
-
-## Bullets
-
-When you click the **Render** button a document will be generated that includes:
-
--   Content authored with markdown
--   Output from executable code
-
-## Code
-
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
-
+:::: {.columns}
+::: {.column width="40%"}
+- (**A**) Anonymous user  
+  Anyone on the internet, can see some of the contents.
+- (**B**) Researcher  
+  Registered user, can see and download most of the contents.
+- (**C**) Archaeologist  
+  An emploee of a licenced organization. Can record and manage projects etc.
+- (**D**) Archivist
+- (**E**) Admin
+:::
+::: {.column width="60%"}
 ```{r}
-1 + 1
+tibble::tibble(role = LETTERS[1:4], docs = c(43978, 117759, 2771, 3289)) |>
+  ggplot2::ggplot(ggplot2::aes(x = role, y = docs)) +
+  ggplot2::geom_col()
 ```
+:::
+::::
+
+
+
 
 
