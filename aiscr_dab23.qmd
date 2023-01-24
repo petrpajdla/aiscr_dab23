@@ -160,12 +160,33 @@ editor:
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Project
+### [Projects]{.proj}
+
+- **84k** Projects
 
 - Administrative entity
+
+### [Fieldwork events]{.ev}
+
+- **157k** Fw. events
 :::
 ::: {.column width="50%"}
-### Fieldwork event
+### [Documents]{.doc}
+
+- More than **160k** Documents
+  - **15k** Excavation reports
+  - **32k** Brief fieldwork reports
+  - **23k** Other texts
+  - **64k** Photographs
+  - **25k** Aerial photographs
+
+### [Sites]{.site}
+
+- **3k** Sites
+
+### [Individual Finds]{.find}
+
+- **1.2k** Indiv. finds
 :::
 ::::
 
@@ -173,16 +194,16 @@ editor:
 
 ## Stats
 
-- [**84k** of Projects]{.fuu}
-- **157k** Fieldwork Events
-- More than **160k** Documents
-  - **15k** Excavation reports
-  - **32k** Brief fieldwork reports 
-  - **23k** Other texts
-  - **64k** Photographs 
-  - **25k** Aerial photographs 
-- **3k** Sites
-- **1.2k** Individual Finds
+- [**84k** of Projects]{.proj}
+- [**157k** Fieldwork Events]{.ev}
+- [More than **160k** Documents]{.doc}
+  - [**15k** Excavation reports]{.doc}
+  - [**32k** Brief fieldwork reports]{.doc}
+  - [**23k** Other texts]{.doc}
+  - [**64k** Photographs]{.doc}
+  - [**25k** Aerial photographs]{.doc}
+- [**3k** Sites]{.site}
+- [**1.2k** Individual Finds]{.find}
 
 
 <!-- data density, maps of data for different periods -->
@@ -207,7 +228,7 @@ editor:
 - **C** *Archaeologist*  
   An employee of a licensed organization. Can record and manage projects etc.
 - **D** *Archivist*
-- **E** *Admin*
+- (**E** *Admin*)
 :::
 ::: {.column width="60%"}
 ```{r}

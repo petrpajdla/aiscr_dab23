@@ -26,6 +26,38 @@
   font-weight: 400;
 }
 
-.fuu {
-  background-color: blue;
+.proj {
+  color: #F39225;
 }
+
+.ev {
+  color: #247E4B;
+}
+
+.doc {
+  color: #5882C4;
+}
+
+.site {
+  color: #951E7A;
+}
+
+.find {
+  color: #85140E;
+}
+
+
+/* 
+colours
+-------
+da
+projects #F39225
+documents #5882C4
+events #247E4B
+sites #951E7A
+finds #85140E
+3d #778E98 
+
+logo
+red #E7302A
+*/
