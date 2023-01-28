@@ -34,7 +34,7 @@ editor:
 ::: {.column width="70%"}
 - AIS CR is a *large research infrastructure*
   - On the Czech Roadmap of [LRIs](https://www.vyzkumne-infrastruktury.cz/en/)
-  - Project funded
+  - Project funding
 
 #### Tasks & goals
 
@@ -46,7 +46,6 @@ editor:
 - **FAIR** principles in data management
 
 :::
-
 ::::
 
 <!-- -------------------------------------------------------------- -->
@@ -96,7 +95,7 @@ editor:
 <https://www.archeologickyatlas.cz/>
 
 - Presents sites *worth* visiting
-- Maps, texts, photos from old excavations, aerial images etc. 
+- Maps, texts, photos, aerial images etc. 
 - Enables *archaeotourism*
 :::
 :::: 
@@ -110,7 +109,7 @@ editor:
 *AMČR Data Provider*  
 <https://api.aiscr.cz/>  
 
-- Allows data harvesting
+- Allows (meta)data harvesting
 - *Open Archives Initiatives Protocol for Metadata Harvesting* (OAI-PMH)
 :::
 :::: 
@@ -159,7 +158,7 @@ editor:
 ## 
 
 :::: {.columns}
-::: {.column width="50%"}
+::: {.column width="33%"}
 ### [Projects]{.proj}
 
 - **84k** Projects
@@ -170,15 +169,17 @@ editor:
 
 - **157k** Fw. events
 :::
-::: {.column width="50%"}
+::: {.column width="33%"}
 ### [Documents]{.doc}
 
-- More than **160k** Documents
-  - **15k** Excavation reports
+- More than **187k** Documents
+  - **18k** Excavation reports
   - **32k** Brief fieldwork reports
-  - **23k** Other texts
+  - **39k** Other texts
   - **64k** Photographs
   - **25k** Aerial photographs
+:::
+:::{.column width="33%"}
 
 ### [Sites]{.site}
 
@@ -196,7 +197,7 @@ editor:
 
 - [**84k** of Projects]{.proj}
 - [**157k** Fieldwork Events]{.ev}
-- [More than **160k** Documents]{.doc}
+- [More than **187k** Documents]{.doc}
   - [**15k** Excavation reports]{.doc}
   - [**32k** Brief fieldwork reports]{.doc}
   - [**23k** Other texts]{.doc}
@@ -207,7 +208,29 @@ editor:
 
 
 <!-- data density, maps of data for different periods -->
-<!-- maps of positive vs negative fieldworks -->
+
+## Archaeological heritage management
+
+:::: {.columns}
+::: {.column width="50%"}
+![Cadastral units with no projects registered (2016--2023).](img/noproj.png)
+
+- In some *cadastral units* no [projects]{.proj} were  
+  registered yet (since 2016). 
+:::
+::: {.column width="50%"}
+![Percentage of projects to which **no** organization signed up for excavation (2016-2022).](img/projnooao.png)
+
+- 
+:::
+::::
+
+## Positive and negative findings
+
+![Number (log scaled) of positive and negative findings.](img/posneg.png)
+
+
+
 
 <!-- -------------------------------------------------------------- -->
 

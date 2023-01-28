@@ -1,3 +1,4 @@
+/* logo */
 .reveal .slide-logo {
   height: 48px !important;
   /* width: 100px!important; */
@@ -5,6 +6,7 @@
   max-height: unset !important;
 }
 
+/* headings */
 .reveal .title {
   font-size: 148%!important;
   /* font-variant: small-caps; */
@@ -26,6 +28,7 @@
   font-weight: 400;
 }
 
+/* entity colors  */
 .proj {
   color: #F39225;
 }
@@ -44,6 +47,17 @@
 
 .find {
   color: #85140E;
+}
+
+/* fig captions */
+figcaption {
+  font-style: italic;
+  text-align: center;
+}
+
+.caption {
+  font-style: italic;
+  text-align: center;
 }
 
 

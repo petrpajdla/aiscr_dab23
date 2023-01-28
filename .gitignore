@@ -2,10 +2,15 @@
 .Rhistory
 .RData
 .Ruserdata
+
+abstract/
+
 aiscr_dab23.code-workspace
-
 aiscr_dab23_files/
-
 aiscr_dab23.html
 
 *.xcf
+
+data/aiscr/
+
+
