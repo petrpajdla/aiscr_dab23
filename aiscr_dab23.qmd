@@ -5,13 +5,15 @@ author: "Petr Pajdla"
 institute: "Institute of Archaeology, Czech Acad. Sci., Brno"
 format: 
   revealjs:
-    width: 1280
+    width: 1920 # 1280
+    height: 1080
     slide-number: true
     logo: img/aiscr_logo.png
     footer: '[AIS CR](https://aiscr.cz/): Towards Open Data and Research'
     css: style.css
-    smaller: true
+    smaller: false
     theme: simple
+    embed-resources: true
 editor:
   render-on-save: true
 ---
@@ -36,7 +38,7 @@ editor:
   - On the Czech Roadmap of [LRIs](https://www.vyzkumne-infrastruktury.cz/en/)
   - Project funding
 
-#### Tasks & goals
+### Tasks & goals
 
 - AIS CR manages **archaeological heritage data** in the Czech Rep.
 

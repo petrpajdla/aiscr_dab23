@@ -1,52 +1,68 @@
 /* logo */
 .reveal .slide-logo {
-  height: 48px !important;
+  height: 62px !important;
   /* width: 100px!important; */
   /* max-width: unset !important; */
   max-height: unset !important;
 }
 
-/* headings */
+/* title */
 .reveal .title {
-  font-size: 148%!important;
+  font-size: 164%!important;
   /* font-variant: small-caps; */
-  font-weight: 800;
+  font-weight: 200;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.reveal .subtitle {
+  font-size: 124%!important;
+  /* font-variant: small-caps; */
+  font-weight: 200;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* headings */
 .reveal h2 {
-  font-size: 128%!important;
-  font-weight: 600;
+  font-size: 122%!important;
+  font-weight: 200;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .reveal h3 {
-  font-size: 118%!important;
-  font-weight: 600;
+  font-size: 108%!important;
+  font-weight: 200;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.reveal h4 {
-  font-size: 108%!important;
-  font-weight: 400;
-}
+/* .reveal h4 {
+  font-size: 112%!important;
+  font-weight: 600;
+} */
 
 /* entity colors  */
 .proj {
   color: #F39225;
+  font-weight: bold;
 }
 
 .ev {
   color: #247E4B;
+  font-weight: bold;
 }
 
 .doc {
   color: #5882C4;
+  font-weight: bold;
 }
 
 .site {
   color: #951E7A;
+  font-weight: bold;
 }
 
 .find {
   color: #85140E;
+  font-weight: bold;
 }
 
 /* fig captions */
