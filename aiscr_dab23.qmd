@@ -264,10 +264,14 @@ AIS CR is a [*large research infrastructure*](https://www.vyzkumne-infrastruktur
 
 ::: {.incremental}
 - Transform the practice of **reports as documents** into **reports as archives** of the original data. [(mid-term)]{.doc}
-- Convince organizations to **publish** their **data under open licence**. [(CC BY-NC 4.0)]{.small}. [(long-term)]{.find}
+- Convince organizations to **publish** their **data under open licences**. [(CC BY-NC 4.0)]{.small}. [(long-term)]{.find}
 - Discourage archaeologists from imposing long **embargo periods** on their data. [(never ending)]{.site}
 - Convince organizations and archaeologists to **use the system**. [(never ending)]{.site}
 :::
+
+![First Czechoslovak president Tomáš Garrigue Masaryk visiting excavations.](img/tgm.jpg){width="100%"}
+
+<!-- -------------------------------------------------------------- -->
 
 ## Challenges in data preservation
 
@@ -276,6 +280,10 @@ AIS CR is a [*large research infrastructure*](https://www.vyzkumne-infrastruktur
 - Impement **repository** software (Fedora). [(mid-term)]{.doc}
 - Become **trusted repository**? [(long-term)]{.find}
 :::
+
+![](img/archivalie.jpg){width="100%"}
+
+<!-- -------------------------------------------------------------- -->
 
 ## Challenges in data reuse and enabling of research
 
@@ -290,6 +298,8 @@ AIS CR is a [*large research infrastructure*](https://www.vyzkumne-infrastruktur
   - Create **tools to query data** (R package?, QGIS plugin?, BASH script?). [(mid-term)]{.doc}
 - Publish **controlled vocabularies** we use in an interoperable manner. [(long-term)]{.doc}
 :::
+
+![](img/roztoky.jpg){width="100%"}
 
 <!-- -------------------------------------------------------------- -->
 
