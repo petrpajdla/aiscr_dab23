@@ -65,6 +65,11 @@
   font-weight: bold;
 }
 
+.else {
+  color: #778E98;
+  font-weight: bold;
+}
+
 /* fig captions */
 figcaption {
   font-style: italic;
@@ -76,6 +81,9 @@ figcaption {
   text-align: center;
 }
 
+.small {
+  font-size: smaller;
+}
 
 /* 
 colours

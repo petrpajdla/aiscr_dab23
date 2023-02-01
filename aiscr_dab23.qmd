@@ -13,12 +13,12 @@ format:
     css: style.css
     smaller: false
     theme: simple
-    embed-resources: true
+    embed-resources: false
 editor:
   render-on-save: true
 ---
 
-## Context of Archaeological Information System of the Czech Rep.
+## Context
 
 <!-- ARU vs ARUB, mapa, historie? -->
 <!-- describe context - legal, project, how archaeology works etc. -->
@@ -27,26 +27,35 @@ editor:
 ::: {.column width="30%"}
 ![](img/map_loga.png)
 
+:::: {.small}
 [**AIS CR**](https://www.aiscr.cz/) is a joined effort of:
 
-- [Institute of Archaeology, Czech Acad. Sci., **Prague**](https://www.arup.cas.cz/)
-- [Institute of Archaeology, Czech Acad. Sci., **Brno**](https://www.arub.cz/)
+- Institute of Archaeology,  
+  Czech Acad. Sci., [**Prague**](https://www.arup.cas.cz/)
+- Institute of Archaeology,  
+  Czech Acad. Sci., [**Brno**](https://www.arub.cz/)
+
+AIS CR is a [*large research infrastructure*](https://www.vyzkumne-infrastruktury.cz/en/).
+::::
 
 :::
 ::: {.column width="70%"}
-- AIS CR is a *large research infrastructure*
-  - On the Czech Roadmap of [LRIs](https://www.vyzkumne-infrastruktury.cz/en/)
-  - Project funding
-
 ### Tasks & goals
 
-- AIS CR manages **archaeological heritage data** in the Czech Rep.
+#### [Archaeological heritage management]{.proj}
+- AIS CR manages **archaeological heritage data**.
+- Existing information sources/systems are gradually **unified**.
+- Everyday agenda is digitalized.
 
-  - Specific agenda: 
+#### [Data preservation]{.doc}
+- The data is expanded by **digitization** of archival sources.
+- Data and documents are **curated for the long term**.
+- **Standardized** controlled vocabularies are used.
 
+#### [Facilitating research]{.site}
 
-- **FAIR** principles in data management
-
+- Data **available both to humans and machines** through **online catalogues and API services**.
+- Data are **accessible** under explicitly **defined conditions with clear license**.
 :::
 ::::
 
@@ -153,7 +162,10 @@ editor:
 
 ## Data model
 
-![Data model](img/amcr_data_model.png)
+- Rather complex and general data model allows for modularity.
+- Partly derived from notion of settlement areas of E. Neustupný.
+
+![Significantly simplified data model](img/amcr_data_model.png)
 
 <!-- -------------------------------------------------------------- -->
 
@@ -164,12 +176,24 @@ editor:
 ### [Projects]{.proj}
 
 - **84k** Projects
+- Administrative agenda
+- Based on reports of building activities (legal obligation)
 
-- Administrative entity
+### [Individual Finds]{.find}
 
+- **1.2k** Indiv. finds
+- Relatively recent addition
+- Support for metal detecting
+:::
+:::{.column width="33%"}
 ### [Fieldwork events]{.ev}
 
 - **157k** Fw. events
+- Archaeology specific metadata
+- Spatially divided into [documentation units]{.ev} with [components]{.ev} -- chronological and functional units
+- Each [documentation unit]{.ev} has a [spatial unit]{.else} (not just metadata, standalone db object, *PIAN*)
+<!-- ### [Sites]{.site}
+- **3k** Sites -->
 :::
 ::: {.column width="33%"}
 ### [Documents]{.doc}
@@ -180,69 +204,96 @@ editor:
   - **39k** Other texts
   - **64k** Photographs
   - **25k** Aerial photographs
+- Both digitized archival documents and new find reports
 :::
-:::{.column width="33%"}
+::::
 
-### [Sites]{.site}
-
-- **3k** Sites
-
-### [Individual Finds]{.find}
-
-- **1.2k** Indiv. finds
+:::: {.columns}
+::: {.column width="20%"}
+![[M-FT-110552900](https://digiarchiv.aiscr.cz/id/M-FT-110552900)](img/f3.png)
+:::
+::: {.column width="20%"}
+![[M-LD-000000071](https://digiarchiv.aiscr.cz/id/M-LD-000000071)](img/f2.png)
+:::
+::: {.column width="20%"}
+![[M-202205107-N00064](https://digiarchiv.aiscr.cz/id/M-202205107-N00064)](img/f5.png)
+:::
+::: {.column width="20%"}
+![[M-LN-000003314](https://digiarchiv.aiscr.cz/id/M-LN-000003314)](img/f1.png)
+:::
+::: {.column width="20%"}
+![[M-202205107-N00055](https://digiarchiv.aiscr.cz/id/M-202205107-N00055)](img/f4.png)
 :::
 ::::
 
 <!-- -------------------------------------------------------------- -->
 
-## Stats
+## [Projects:]{.proj} Archaeological heritage management
 
-- [**84k** of Projects]{.proj}
-- [**157k** Fieldwork Events]{.ev}
-- [More than **187k** Documents]{.doc}
-  - [**15k** Excavation reports]{.doc}
-  - [**32k** Brief fieldwork reports]{.doc}
-  - [**23k** Other texts]{.doc}
-  - [**64k** Photographs]{.doc}
-  - [**25k** Aerial photographs]{.doc}
-- [**3k** Sites]{.site}
-- [**1.2k** Individual Finds]{.find}
-
-
-<!-- data density, maps of data for different periods -->
-
-## Archaeological heritage management
+- In some *cadastral units*, no [projects]{.proj} were registered yet (since 2016). 
+- Some organizations are **not** using the system on a regular basis *(bias in the right figure)*.
+- There are regions that are *far* from the centres -- less projects get excavated in the outskirts.
 
 :::: {.columns}
 ::: {.column width="50%"}
-![Cadastral units with no projects registered (2016--2023).](img/noproj.png)
-
-- In some *cadastral units* no [projects]{.proj} were  
-  registered yet (since 2016). 
+![Cadastral units with no projects registered (2016--2022).](img/noproj.png)
 :::
 ::: {.column width="50%"}
 ![Percentage of projects to which **no** organization signed up for excavation (2016-2022).](img/projnooao.png)
-
-- 
 :::
 ::::
 
-## Positive and negative findings
+<!-- -------------------------------------------------------------- -->
+
+## [Fieldwork events:]{.ev} Positive and negative findings
+
+- The [project]{.proj}-based workflow enables recording of [events]{.ev} without archaeology.
+- Useful both for **planning** and **analytical purposes**.
 
 ![Number (log scaled) of positive and negative findings.](img/posneg.png)
 
+<!-- -------------------------------------------------------------- -->
 
+## [Fieldwork events:]{.ev} Data coverage for different periods
 
+![Number (log scaled) of components falling within the given period (generalized).](img/datace_map_grid.png)
 
 <!-- -------------------------------------------------------------- -->
 
-## Repository
-<!-- info that we are getting a repository? -->
-<!-- DOI? -->
+## Challenges in archaeological heritage management
+
+::: {.incremental}
+- Transform the practice of **reports as documents** into **reports as archives** of the original data. [(mid-term)]{.doc}
+- Convince organizations to **publish** their **data under open licence**. [(CC BY-NC 4.0)]{.small}. [(long-term)]{.find}
+- Discourage archaeologists from imposing long **embargo periods** on their data. [(never ending)]{.site}
+- Convince organizations and archaeologists to **use the system**. [(never ending)]{.site}
+:::
+
+## Challenges in data preservation
+
+::: {.incremental}
+- Implement **persistent identifiers** (DOIs). [(mid-term)]{.doc}
+- Impement **repository** software (Fedora). [(mid-term)]{.doc}
+- Become **trusted repository**? [(long-term)]{.find}
+:::
+
+## Challenges in data reuse and enabling of research
+
+- There are *many* articles reusing AIS CR/AMČR data.
+- Mostly the authors are directly affiliated to the infrastructure...
+
+*Hey, can you give me a GIS layer with all the ________ settlements?*
+
+::: {.incremental}
+- Make it *easy* to get the data:
+  - Implement API solution that would allow more **complex queries**. [(mid-term)]{.doc}
+  - Create **tools to query data** (R package?, QGIS plugin?, BASH script?). [(mid-term)]{.doc}
+- Publish **controlled vocabularies** we use in an interoperable manner. [(long-term)]{.doc}
+:::
 
 <!-- -------------------------------------------------------------- -->
 
-## User roles
+<!-- ## User roles
 
 :::: {.columns}
 ::: {.column width="40%"}
@@ -264,12 +315,7 @@ tibble::tibble(role = LETTERS[1:4], docs = c(43978, 117759, 2771, 3289)) |>
   ggplot2::theme_light()
 ```
 :::
-::::
-
-<!-- -------------------------------------------------------------- -->
-
-
-## Challenges
+:::: -->
 
 <!-- -------------------------------------------------------------- -->
 

@@ -9,7 +9,7 @@ source(here::here("code/data_read_aiscr_export.R"))
 
 # amcr projekty
 proj <- read_amcr("projekt")[["projekt"]] %>% 
-  filter(id_rok %in% 2016:2023) %>% 
+  filter(id_rok %in% 2016:2022) %>% 
   group_by(katastr) %>% 
   count() %>% 
   mutate(katastr = str_to_lower(katastr))

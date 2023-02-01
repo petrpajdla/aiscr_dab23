@@ -1,0 +1,4 @@
+- source: aiscr_dab23.qmd
+  quarto-pub:
+    - id: fec55b1c-e841-4f54-996e-5821322b5dab
+      url: 'https://quartopub.com/sites/knytt/dab23aiscr'
